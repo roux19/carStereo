@@ -20,20 +20,171 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center_horizontal"
             android:background="#00FF00"
-            android:layout_weight=".33"></LinearLayout>
+            android:layout_weight=".33"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="PWR"
+                android:id="@+id/toggleButton"
+                android:layout_weight="0.10"/>
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Volume: "
+                android:id="@+id/textView" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                android:layout_weight="0.88"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:layout_weight=".33"></LinearLayout>
+            android:layout_weight=".33">
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/preOne"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/preTwo"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/preThree"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/preFour"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:id="@+id/preFive"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight=".33"
-            android:background="#FFFF00"></LinearLayout>
+            android:background="#FFFF00">
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Frequency: "
+                android:id="@+id/textView2"
+                android:layout_gravity="center_vertical" />
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="108.3"
+                android:id="@+id/station"
+                android:layout_gravity="center_vertical" />
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="match_parent" />
+
+            <SeekBar
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/setStation"
+                android:layout_gravity="center_vertical"
+                android:max="20"/>
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="match_parent" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/toggleButton2"
+                android:layout_gravity="center_vertical"
+                android:textOff="FM"
+                android:textOn="AM"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -41,5 +192,86 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.50"
-        android:background="#F0F0F0"></LinearLayout>
+        android:background="#F0F0F0">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#9923FF"
+            android:layout_weight="1">
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pause"
+                android:id="@+id/button"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="stop"
+                android:id="@+id/button2"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eject"
+                android:id="@+id/button3"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="skip"
+                android:id="@+id/button4"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="back"
+                android:id="@+id/button5"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <Space
+                android:layout_width="75dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <cs371.carstereo.CDTray
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/surfaceView"
+            android:layout_weight="1"
+            android:background="#ffffff" />
+    </LinearLayout>
 </LinearLayout>
